@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,9 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".MainActivity2"></activity>
-        <activity android:name=".MainActivity"
-            android:label="鬼灭之刃">
+        <activity android:name=".YourArtical"></activity>
+        <activity
+            android:name=".wanandriod"
+            android:label="@string/title_activity_wanandriod" />
+        <activity android:name=".MainActivity2" />
+        <activity
+            android:name=".MainActivity"
+            android:icon="@drawable/face2"
+            android:label="wan android">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
